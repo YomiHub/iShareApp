@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/list_card_style"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/cardTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:text="我的数据" />
+        <TextView
+            android:id="@+id/cardId"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:text="这里存放文章Id" />
+        <ImageView
+            android:id="@+id/cardImgTip"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/my_tab_list2"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#000000"/>
+
+    <TextView
+        android:id="@+id/cardContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:text="这里放一些内容，这里放一些图片，这里扩展性很强"/>
+
+<!--   分享为图片/图书类型则显示-->
+    <ImageView
+        android:id="@+id/cardContent_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:visibility="gone"/>
+
+    <!--   分享为音乐类型则显示-->
+    <LinearLayout
+        android:id="@+id/cardContent_music"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/cardTitle_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:text="演员——薛之谦" />
+
+        <ImageView
+            android:id="@+id/cardImg_musicBac"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/play_music"
+            />
+    </LinearLayout>
+</LinearLayout>
+

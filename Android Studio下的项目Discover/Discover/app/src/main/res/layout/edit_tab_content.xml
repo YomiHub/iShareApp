@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout android:gravity="center_vertical"
+        android:orientation="horizontal" android:id="@+id/title_bar"
+        android:background="@drawable/title_bg_night" android:layout_width="fill_parent"
+        android:layout_height="35.0dip">
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:src="@drawable/app_icon" />
+        <LinearLayout android:gravity="center_vertical"
+            android:layout_width="0.0dip" android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+            <TextView android:textSize="16.0sp" android:textColor="@color/titleTextColor"
+                android:singleLine="true" android:id="@+id/myTitle"
+                android:layout_width="fill_parent" android:ellipsize="end"
+                android:layout_height="wrap_content" android:layout_marginLeft="2.0dip"
+                android:text="@string/app_name" />
+        </LinearLayout>
+
+
+        <ImageButton android:id="@+id/back_button3"
+            android:layout_gravity="center" android:background="@color/transparent"
+            android:layout_width="60.0dip" android:layout_height="29.0dip"
+            android:layout_marginRight="5.0dip" android:src="@drawable/exit" />
+    </LinearLayout>
+<!--专用测试
+ <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/tab_icon_four" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="这是发布界面"
+            android:textSize="20sp" />
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp">
+
+        <RelativeLayout
+            android:id="@+id/bt_share_funny"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/share_funny_image_bc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/share_funny_select"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="分享趣事"
+                    android:textColor="#82858b" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/bt_share_pic"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/share_pic_image_bc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/share_pic_no_select" />
+
+                <TextView
+                    android:id="@+id/find_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="分享图片"
+                    android:textColor="#82858b" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/bt_share_music"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/share_music_image_bc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/share_music_no_select" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="分享音乐"
+                    android:textColor="#82858b" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/bt_share_diary"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/share_diary_image_bc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/share_diary_no_select" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="发布日记"
+                    android:textColor="#82858b" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--分享趣-->
+    <LinearLayout
+        android:id="@+id/edit_base_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/rl_login_top"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:gravity="center"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="标    题："/>
+            <EditText
+                android:id="@+id/et_edit_title_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="10"
+                android:paddingLeft="10.0dip"
+                android:singleLine="true"
+                android:hint="标题请保持在10个字以内"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="40"
+                android:text="简    述："/>
+            <EditText
+                android:id="@+id/et_edit_describe_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10.0dip"
+                android:hint="简述你要分享的趣事" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="分 享 详 情："/>
+        <LinearLayout
+            android:id="@+id/edit_detail_info_layout"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:padding="10.0dip"
+            android:background="@drawable/edit_layout_border"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_edit_detail_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10.0dip"
+                android:inputType="textMultiLine"
+                android:background="@null"
+                android:hint="在这详细介绍趣事"/>
+        </LinearLayout>
+
+        <Button
+        android:id="@+id/edit_sure_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:background="@drawable/selector_loginactivity_button"
+        android:text="发布"
+        android:textColor="#fff"
+        android:gravity="center"
+        />
+    </LinearLayout>
+</RelativeLayout>

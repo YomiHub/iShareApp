@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty_cart_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffefebe7" >
+
+    <LinearLayout
+        android:background="@color/white"
+        android:id="@+id/top_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/images_head"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/tab_icon_one"/>
+
+        <LinearLayout
+             android:id="@+id/login_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0.3"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="昵称："
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/t_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="丫an梅"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="签名："
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/t_sign"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.44"
+                    android:text="人生的意义在于尝试和守护"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/un_login_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0.3"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/pop_login"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/button_radius"
+                    android:text="登录"
+
+                    android:gravity="center"
+                    />
+
+                <Button
+                    android:id="@+id/pop_register"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/button_radius"
+                    android:text="注册"
+
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/top_relative"
+    android:fadingEdge="none" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingBottom="60.0dip"
+
+                android:paddingTop="10.0dip"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10.0dip"
+                    android:text="相关设置"
+                    android:textColor="#ff888888"
+                    android:textSize="16.0sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TableLayout
+                        android:id="@+id/MorePageTableLayout_Follow"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="1.0dip"
+                        android:shrinkColumns="0"
+                        android:stretchColumns="0" >
+
+                        <TableRow
+                            android:id="@+id/more_page_row1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2.0dip"
+                            android:layout_marginRight="2.0dip"
+                            android:background="@drawable/small_bc"
+                            android:paddingBottom="16.0dip"
+                            android:paddingTop="16.0dip" >
+
+                            <TextView
+                                android:id="@+id/test_text_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:drawableLeft="@drawable/my_tab_list1"
+                                android:drawablePadding="10.0dip"
+                                android:gravity="center_vertical"
+                                android:includeFontPadding="false"
+                                android:paddingLeft="24.0dip"
+                                android:text="账号管理"
+                                android:textColor="#ff333333"
+                                android:textSize="16.0sp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_gravity="right"
+                                android:gravity="center_vertical"
+                                android:paddingRight="20.0dip"
+                                android:src="@drawable/next_right" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/more_page_row2"
+                            android:layout_width="fill_parent"
+                            android:layout_marginLeft="2.0dip"
+                            android:layout_marginRight="2.0dip"
+                            android:background="@drawable/small_bc"
+                            android:paddingBottom="16.0dip"
+                            android:paddingTop="16.0dip" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:drawableLeft="@drawable/my_tab_list2"
+                                android:drawablePadding="10.0dip"
+                                android:gravity="center_vertical"
+                                android:includeFontPadding="false"
+                                android:paddingLeft="24.0dip"
+                                android:text="更新签名"
+                                android:textColor="#ff333333"
+                                android:textSize="16.0sp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_gravity="right"
+                                android:gravity="center_vertical"
+                                android:paddingRight="20.0dip"
+                                android:src="@drawable/next_right" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/more_page_row3"
+                            android:layout_width="fill_parent"
+                            android:layout_marginLeft="2.0dip"
+                            android:layout_marginRight="2.0dip"
+                            android:background="@drawable/small_bc"
+                            android:paddingBottom="16.0dip"
+                            android:paddingTop="16.0dip" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:drawableLeft="@drawable/my_tab_list3"
+                                android:drawablePadding="10.0dip"
+                                android:gravity="center_vertical"
+                                android:includeFontPadding="false"
+                                android:paddingLeft="24.0dip"
+                                android:text="修改密码"
+                                android:textColor="#ff333333"
+                                android:textSize="16.0sp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_gravity="right"
+                                android:gravity="center_vertical"
+                                android:paddingRight="20.0dip"
+                                android:src="@drawable/next_right" />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10.0dip"
+                    android:text="关于我的"
+                    android:textColor="#ff888888"
+                    android:textSize="16.0sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TableLayout
+                        android:id="@+id/MorePageTableLayout_Client"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="1.0dip"
+                        android:shrinkColumns="0"
+                        android:stretchColumns="0" >
+
+                        <TableRow
+                            android:id="@+id/more_page_row4"
+                            android:layout_width="fill_parent"
+                            android:layout_marginLeft="2.0dip"
+                            android:layout_marginRight="2.0dip"
+                            android:background="@drawable/small_bc"
+                            android:paddingBottom="16.0dip"
+                            android:paddingTop="16.0dip" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:drawableLeft="@drawable/my_tab_list4"
+                                android:drawablePadding="10.0dip"
+                                android:gravity="center_vertical"
+                                android:includeFontPadding="false"
+                                android:paddingLeft="24.0dip"
+                                android:text="我的分享"
+                                android:textColor="#ff333333"
+                                android:textSize="16.0sp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_gravity="right"
+                                android:gravity="center_vertical"
+                                android:paddingRight="20.0dip"
+                                android:src="@drawable/next_right" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/more_page_row5"
+                            android:layout_width="fill_parent"
+                            android:layout_marginLeft="2.0dip"
+                            android:layout_marginRight="2.0dip"
+                            android:background="@drawable/small_bc"
+                            android:paddingBottom="16.0dip"
+                            android:paddingTop="16.0dip" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:drawableLeft="@drawable/my_tab_list5"
+                                android:drawablePadding="10.0dip"
+                                android:gravity="center_vertical"
+                                android:includeFontPadding="false"
+                                android:paddingLeft="24.0dip"
+                                android:text="我的日记"
+                                android:textColor="#ff333333"
+                                android:textSize="16.0sp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_gravity="right"
+                                android:gravity="center_vertical"
+                                android:paddingRight="20.0dip"
+                                android:src="@drawable/next_right" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/more_page_row6"
+                            android:layout_width="fill_parent"
+                            android:layout_marginLeft="2.0dip"
+                            android:layout_marginRight="2.0dip"
+                            android:background="@drawable/small_bc"
+                            android:paddingBottom="16.0dip"
+                            android:paddingTop="16.0dip" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:drawableLeft="@drawable/my_tab_list6"
+                                android:drawablePadding="10.0dip"
+                                android:gravity="center_vertical"
+                                android:includeFontPadding="false"
+                                android:paddingLeft="24.0dip"
+                                android:text="我的收藏"
+                                android:textColor="#ff333333"
+                                android:textSize="16.0sp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_gravity="right"
+                                android:gravity="center_vertical"
+                                android:paddingRight="20.0dip"
+                                android:src="@drawable/next_right" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/more_page_row7"
+                            android:layout_width="fill_parent"
+                            android:layout_marginLeft="2.0dip"
+                            android:layout_marginRight="2.0dip"
+                            android:background="@drawable/small_bc"
+                            android:paddingBottom="16.0dip"
+                            android:paddingTop="16.0dip" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:drawableLeft="@drawable/my_tab_list7"
+                                android:drawablePadding="10.0dip"
+                                android:gravity="center_vertical"
+                                android:includeFontPadding="false"
+                                android:paddingLeft="24.0dip"
+                                android:text="关于 i 分享"
+                                android:textColor="#ff333333"
+                                android:textSize="16.0sp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_gravity="right"
+                                android:gravity="center_vertical"
+                                android:paddingRight="20.0dip"
+                                android:src="@drawable/next_right" />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

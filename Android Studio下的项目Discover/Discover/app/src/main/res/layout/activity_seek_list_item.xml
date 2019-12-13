@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TableLayout
+                    android:id="@+id/seek_list_tableLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="1.0dip"
+                    android:shrinkColumns="0"
+                    android:stretchColumns="0"
+                    android:background="#ebebeb">
+
+                    <TableRow
+                        android:id="@+id/seek_list_tableRow"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/small_bc"
+                        android:paddingBottom="12.0dip"
+                        android:paddingTop="12.0dip" >
+
+                        <TextView
+                            android:id="@+id/seek_list_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:drawableLeft="@drawable/hot_key"
+                            android:drawablePadding="16.0dip"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:text="热门标题"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp"
+                            android:paddingLeft="20dp"/>
+                        <TextView
+                            android:id="@+id/seek_list_textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:text="12345"
+                            android:textColor="#424202"
+                            android:textSize="16.0sp"
+                            android:paddingRight="20dp"/>
+                         <!--android:adjustViewBounds="true"图片自适应-->
+                        <TextView
+                            android:id="@+id/seek_list_cardId"
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:textSize="18sp"
+                            android:textColor="#000000"
+                            android:text="" />
+                        <ImageView
+                            android:adjustViewBounds="true"
+                            android:id="@+id/seek_list_imgView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_gravity="right"
+                            android:gravity="center_vertical"
+                            android:src="@drawable/next_right"
+                            android:paddingRight="30dp"/>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>
